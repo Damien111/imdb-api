@@ -71,8 +71,8 @@
   ],
   "dependencies": {
     "@ungap/url-search-params": "^0.2.2",
-    "ky": "^0.24.0",
-    "ky-universal": "^0.8.2"
+    "ky": "^0.28.5",
+    "ky-universal": "^0.9.1"
   },
   "mocha": {
     "require": [
