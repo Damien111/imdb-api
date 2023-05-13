@@ -729,7 +729,7 @@ export class Client {
    *
    * @return a promise yielding a movie
    */
-  public get(req: MovieRequest, opts?: MovieOpts): Promise<Movie> {
+  public get(req: MovieRequest, opts?: MovieOpts): Promise<Movie | TVShow> {
     const mergedOpts = this.mergeOpts(opts);
     if (mergedOpts.apiKey === undefined) {
       throw new ImdbError("Missing api key in opts");
