@@ -637,7 +637,7 @@ export class ImdbError {
  *
  * @return a promise yielding a movie
  */
-export function get(req: MovieRequest, opts: MovieOpts): Promise<Movie> {
+export function get(req: MovieRequest, opts: MovieOpts): Promise<Movie | TVShow> {
   try {
     return new Client(opts).get(req);
   } catch (e) {
